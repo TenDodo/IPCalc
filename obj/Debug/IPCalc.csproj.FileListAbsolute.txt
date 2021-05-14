@@ -1,0 +1,10 @@
+C:\Users\1arka\source\repos\IPCalc\IPCalc\bin\Debug\IPCalc.exe.config
+C:\Users\1arka\source\repos\IPCalc\IPCalc\bin\Debug\IPCalc.exe
+C:\Users\1arka\source\repos\IPCalc\IPCalc\bin\Debug\IPCalc.pdb
+C:\Users\1arka\source\repos\IPCalc\IPCalc\obj\Debug\IPCalc.csprojAssemblyReference.cache
+C:\Users\1arka\source\repos\IPCalc\IPCalc\obj\Debug\IPCalc.Form1.resources
+C:\Users\1arka\source\repos\IPCalc\IPCalc\obj\Debug\IPCalc.Properties.Resources.resources
+C:\Users\1arka\source\repos\IPCalc\IPCalc\obj\Debug\IPCalc.csproj.GenerateResource.cache
+C:\Users\1arka\source\repos\IPCalc\IPCalc\obj\Debug\IPCalc.csproj.CoreCompileInputs.cache
+C:\Users\1arka\source\repos\IPCalc\IPCalc\obj\Debug\IPCalc.exe
+C:\Users\1arka\source\repos\IPCalc\IPCalc\obj\Debug\IPCalc.pdb
