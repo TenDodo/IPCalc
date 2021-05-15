@@ -133,7 +133,6 @@ namespace IPCalc
 
         string GenerateNote(string[] ip, char netclass)
         {
-            MessageBox.Show(ip[0] + "." + ip[1] + "." + ip[2] + "." + ip[3]);
             string note = "Note:";
             if (netclass == 'D')
             {
@@ -197,7 +196,7 @@ namespace IPCalc
             }
             else if (int.Parse(ip[0]) == 192 && int.Parse(ip[1]) == 0 && int.Parse(ip[2]) == 2)
             {
-                note += " This address is assigned as TEST-NET-1, and it's used for documentation and\nexamples.";
+                note += " This address is assigned as TEST-NET-1 and it's used for documentation and\nexamples.";
             }
             else if (int.Parse(ip[0]) == 192 && int.Parse(ip[1]) == 88 && int.Parse(ip[2]) == 99)
             {
@@ -209,15 +208,15 @@ namespace IPCalc
             }
             else if (int.Parse(ip[0]) == 198 && int.Parse(ip[1]) == 51 && int.Parse(ip[2]) == 100)
             {
-                note += " This address is assigned as TEST-NET-2, and it's used for documentation and\nexamples.";
+                note += " This address is assigned as TEST-NET-2 and it's used for documentation and\nexamples.";
             }
             else if (int.Parse(ip[0]) == 203 && int.Parse(ip[1]) == 0 && int.Parse(ip[2]) == 113)
             {
-                note += " This address is assigned as TEST-NET-3, and it's used for documentation and\nexamples.";
+                note += " This address is assigned as TEST-NET-3 and it's used for documentation and\nexamples.";
             }
             else if (int.Parse(ip[0]) == 233 && int.Parse(ip[1]) == 252 && int.Parse(ip[2]) == 0)
             {
-                note += " This address is assigned as MCAST-TEST-NET, and it's used for documentation\nand examples.";
+                note += " This address is assigned as MCAST-TEST-NET and it's used for documentation\nand examples.";
             }
             else if (int.Parse(ip[0]) == 255 && int.Parse(ip[1]) == 255 && int.Parse(ip[2]) == 255 && int.Parse(ip[3]) == 255)
             {
