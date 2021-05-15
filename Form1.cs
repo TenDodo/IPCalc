@@ -19,14 +19,7 @@ namespace IPCalc
 
         bool isIpValid(string address)
         {
-            if (address.Replace(".", "").All(Char.IsDigit) && address.Split('.').Length == 4 && address.Split('.').All(element => int.Parse(element) < 256 && int.Parse(element) >= 0))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return address.Replace(".", "").All(Char.IsDigit) && address.Split('.').Length == 4 && address.Split('.').All(element => int.Parse(element) < 256 && int.Parse(element) >= 0);            
         }
 
         byte isNetmaskValid(string netmask)
@@ -42,15 +35,9 @@ namespace IPCalc
                 {
                     return 1;
 
-                }
-                else
-                {
-                    return 2;
-                }
-            } else
-            {
-                return 2;
+                }                
             }
+            return 2;
         }
 
         private void calculateButton_Click(object sender, EventArgs e)
@@ -85,23 +72,23 @@ namespace IPCalc
                 networkArray = new string[] { (int.Parse(ipArray[0]) & int.Parse(maskArray[0])).ToString(), (int.Parse(ipArray[1]) & int.Parse(maskArray[1])).ToString(), (int.Parse(ipArray[2]) & int.Parse(maskArray[2])).ToString(), (int.Parse(ipArray[3]) & int.Parse(maskArray[3])).ToString() };
                 NetworkLabel.Text = networkArray[0] + "." + networkArray[1] + "." + networkArray[2] + "." + networkArray[3];
                 NetworkBinLabel.Text = decToBin(int.Parse(networkArray[0])).PadLeft(8, '0') + "." + decToBin(int.Parse(networkArray[1])).PadLeft(8, '0') + "." + decToBin(int.Parse(networkArray[2])).PadLeft(8, '0') + "." + decToBin(int.Parse(networkArray[3])).PadLeft(8, '0');
-                if (int.Parse(ipArray[0]) >= 0 && int.Parse(ipArray[0]) <= 127)
+                if (int.Parse(networkArray[0]) >= 0 && int.Parse(networkArray[0]) <= 127)
                 {
                     netclass = 'A';
                 }
-                else if (int.Parse(ipArray[0]) >= 128 && int.Parse(ipArray[0]) <= 191)
+                else if (int.Parse(networkArray[0]) >= 128 && int.Parse(networkArray[0]) <= 191)
                 {
                     netclass = 'B';
                 }
-                else if (int.Parse(ipArray[0]) >= 192 && int.Parse(ipArray[0]) <= 223)
+                else if (int.Parse(networkArray[0]) >= 192 && int.Parse(networkArray[0]) <= 223)
                 {
                     netclass = 'C';
                 }
-                else if (int.Parse(ipArray[0]) >= 224 && int.Parse(ipArray[0]) <= 239)
+                else if (int.Parse(networkArray[0]) >= 224 && int.Parse(networkArray[0]) <= 239)
                 {
                     netclass = 'D';
                 }
-                else if (int.Parse(ipArray[0]) >= 240 && int.Parse(ipArray[0]) <= 255)
+                else if (int.Parse(networkArray[0]) >= 240 && int.Parse(networkArray[0]) <= 255)
                 {
                     netclass = 'E';
                 }
@@ -220,7 +207,7 @@ namespace IPCalc
             }
             else if (int.Parse(ip[0]) == 255 && int.Parse(ip[1]) == 255 && int.Parse(ip[2]) == 255 && int.Parse(ip[3]) == 255)
             {
-                note += " This address is reserved for the \"limited broadcast\" destination address.";
+                note += " This address is reserved for the \"limited\nbroadcast\" destination address.";
             }
             if (note == "Note:")
             {
@@ -230,6 +217,7 @@ namespace IPCalc
             {
                 return note;
             }
+
             
         }
     }

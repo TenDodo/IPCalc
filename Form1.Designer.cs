@@ -115,19 +115,20 @@ namespace IPCalc
             this.NetworkLabel.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.NetworkLabel.Location = new System.Drawing.Point(104, 80);
             this.NetworkLabel.Name = "NetworkLabel";
-            this.NetworkLabel.Size = new System.Drawing.Size(49, 14);
+            this.NetworkLabel.Size = new System.Drawing.Size(28, 14);
             this.NetworkLabel.TabIndex = 6;
-            this.NetworkLabel.Text = "label4";
+            this.NetworkLabel.Text = "   ";
             // 
             // NetworkBinLabel
             // 
             this.NetworkBinLabel.AutoSize = true;
             this.NetworkBinLabel.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.NetworkBinLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.NetworkBinLabel.Location = new System.Drawing.Point(223, 80);
             this.NetworkBinLabel.Name = "NetworkBinLabel";
-            this.NetworkBinLabel.Size = new System.Drawing.Size(49, 14);
+            this.NetworkBinLabel.Size = new System.Drawing.Size(28, 14);
             this.NetworkBinLabel.TabIndex = 7;
-            this.NetworkBinLabel.Text = "label4";
+            this.NetworkBinLabel.Text = "   ";
             // 
             // label4
             // 
@@ -145,9 +146,9 @@ namespace IPCalc
             this.ClassLabel.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ClassLabel.Location = new System.Drawing.Point(104, 124);
             this.ClassLabel.Name = "ClassLabel";
-            this.ClassLabel.Size = new System.Drawing.Size(49, 14);
+            this.ClassLabel.Size = new System.Drawing.Size(28, 14);
             this.ClassLabel.TabIndex = 9;
-            this.ClassLabel.Text = "label4";
+            this.ClassLabel.Text = "   ";
             // 
             // label5
             // 
@@ -165,19 +166,20 @@ namespace IPCalc
             this.BroadcastLabel.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.BroadcastLabel.Location = new System.Drawing.Point(104, 102);
             this.BroadcastLabel.Name = "BroadcastLabel";
-            this.BroadcastLabel.Size = new System.Drawing.Size(49, 14);
+            this.BroadcastLabel.Size = new System.Drawing.Size(28, 14);
             this.BroadcastLabel.TabIndex = 11;
-            this.BroadcastLabel.Text = "label4";
+            this.BroadcastLabel.Text = "   ";
             // 
             // BroadcastBinLabel
             // 
             this.BroadcastBinLabel.AutoSize = true;
             this.BroadcastBinLabel.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.BroadcastBinLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BroadcastBinLabel.Location = new System.Drawing.Point(223, 102);
             this.BroadcastBinLabel.Name = "BroadcastBinLabel";
-            this.BroadcastBinLabel.Size = new System.Drawing.Size(49, 14);
+            this.BroadcastBinLabel.Size = new System.Drawing.Size(28, 14);
             this.BroadcastBinLabel.TabIndex = 12;
-            this.BroadcastBinLabel.Text = "label4";
+            this.BroadcastBinLabel.Text = "   ";
             // 
             // label6
             // 
@@ -205,9 +207,9 @@ namespace IPCalc
             this.HostMinLabel.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.HostMinLabel.Location = new System.Drawing.Point(104, 146);
             this.HostMinLabel.Name = "HostMinLabel";
-            this.HostMinLabel.Size = new System.Drawing.Size(49, 14);
+            this.HostMinLabel.Size = new System.Drawing.Size(28, 14);
             this.HostMinLabel.TabIndex = 15;
-            this.HostMinLabel.Text = "label4";
+            this.HostMinLabel.Text = "   ";
             // 
             // HostMaxLabel
             // 
@@ -215,29 +217,31 @@ namespace IPCalc
             this.HostMaxLabel.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.HostMaxLabel.Location = new System.Drawing.Point(104, 168);
             this.HostMaxLabel.Name = "HostMaxLabel";
-            this.HostMaxLabel.Size = new System.Drawing.Size(49, 14);
+            this.HostMaxLabel.Size = new System.Drawing.Size(28, 14);
             this.HostMaxLabel.TabIndex = 16;
-            this.HostMaxLabel.Text = "label4";
+            this.HostMaxLabel.Text = "   ";
             // 
             // HostMinBinLabel
             // 
             this.HostMinBinLabel.AutoSize = true;
             this.HostMinBinLabel.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.HostMinBinLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.HostMinBinLabel.Location = new System.Drawing.Point(223, 146);
             this.HostMinBinLabel.Name = "HostMinBinLabel";
-            this.HostMinBinLabel.Size = new System.Drawing.Size(49, 14);
+            this.HostMinBinLabel.Size = new System.Drawing.Size(35, 14);
             this.HostMinBinLabel.TabIndex = 17;
-            this.HostMinBinLabel.Text = "label4";
+            this.HostMinBinLabel.Text = "    ";
             // 
             // HostMaxBinLabel
             // 
             this.HostMaxBinLabel.AutoSize = true;
             this.HostMaxBinLabel.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.HostMaxBinLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.HostMaxBinLabel.Location = new System.Drawing.Point(223, 168);
             this.HostMaxBinLabel.Name = "HostMaxBinLabel";
-            this.HostMaxBinLabel.Size = new System.Drawing.Size(49, 14);
+            this.HostMaxBinLabel.Size = new System.Drawing.Size(35, 14);
             this.HostMaxBinLabel.TabIndex = 18;
-            this.HostMaxBinLabel.Text = "label4";
+            this.HostMaxBinLabel.Text = "    ";
             // 
             // label8
             // 
@@ -255,9 +259,9 @@ namespace IPCalc
             this.HostsAmountLabel.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.HostsAmountLabel.Location = new System.Drawing.Point(104, 190);
             this.HostsAmountLabel.Name = "HostsAmountLabel";
-            this.HostsAmountLabel.Size = new System.Drawing.Size(49, 14);
+            this.HostsAmountLabel.Size = new System.Drawing.Size(28, 14);
             this.HostsAmountLabel.TabIndex = 20;
-            this.HostsAmountLabel.Text = "label4";
+            this.HostsAmountLabel.Text = "   ";
             // 
             // NoteLabel
             // 
